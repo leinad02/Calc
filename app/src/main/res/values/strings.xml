@@ -3,4 +3,8 @@
 
     <!-- Text View !-->
     <string name="gebe_zwei_zahlen_ein">Gebe zwei Zahlen ein!</string>
+    <string name="dividenden">0</string>
+    <string name="divisor">0</string>
+    <string name="btn_dividiere">Dividiere!</string>
+    <string name="quotient">0.0</string>
 </resources>

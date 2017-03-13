@@ -12,46 +12,47 @@
         android:id="@+id/twEingabehint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:gravity="center"
+        android:text="@string/gebe_zwei_zahlen_ein"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="25sp"
-        tools:text="Geben Sie zwei Zahlen ein!"
-        tools:layout_conversion_absoluteX="0dp"
-        tools:layout_conversion_absoluteY="25dp"
-        tools:layout_conversion_absoluteWidth="360dp"
-        tools:layout_conversion_absoluteHeight="29dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="25dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_conversion_absoluteHeight="29dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="25dp" />
 
     <EditText
         android:id="@+id/eTeingabe1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:ems="20"
         android:inputType="numberDecimal"
-        tools:layout_conversion_absoluteX="0dp"
-        tools:layout_conversion_absoluteY="69dp"
-        tools:layout_conversion_absoluteWidth="360dp"
-        tools:layout_conversion_absoluteHeight="42dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        android:text="@string/dividenden"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="7dp"
         app:layout_constraintTop_toBottomOf="@+id/twEingabehint"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="1.0">
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_conversion_absoluteHeight="42dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="69dp">
 
         <requestFocus
-            tools:layout_conversion_absoluteX="0dp"
-            tools:layout_conversion_absoluteY="69dp"
+            tools:layout_conversion_absoluteHeight="0dp"
             tools:layout_conversion_absoluteWidth="0dp"
-            tools:layout_conversion_absoluteHeight="0dp" />
+            tools:layout_conversion_absoluteX="0dp"
+            tools:layout_conversion_absoluteY="69dp" />
     </EditText>
 
 
@@ -61,23 +62,25 @@
         android:layout_height="wrap_content"
         android:ems="20"
         android:inputType="numberDecimal"
-        tools:layout_conversion_absoluteX="0dp"
-        tools:layout_conversion_absoluteY="112dp"
-        tools:layout_conversion_absoluteWidth="360dp"
-        tools:layout_conversion_absoluteHeight="42dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        android:text="@string/divisor"
+        app:layout_constraintLeft_toLeftOf="@+id/eTeingabe1"
         app:layout_constraintRight_toRightOf="@+id/eTeingabe1"
         app:layout_constraintTop_toBottomOf="@+id/eTeingabe1"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/eTeingabe1" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_conversion_absoluteHeight="42dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="112dp" />
 
     <Button
         android:id="@+id/btndiv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginTop="136dp"
 
+        android:text="@string/btn_dividiere"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -85,38 +88,35 @@
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        tools:text="Dividiere!"
-        android:layout_marginTop="136dp" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/twErgname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Quotient:"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="20sp"
-        tools:text="Quotient:"
-        android:layout_marginStart="16dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/twQuotient"
-        tools:layout_constraintBaseline_creator="1"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
 
     <TextView
         android:id="@+id/twQuotient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="96dp"
+        android:text="@string/quotient"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTeingabe2"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
 
 </android.support.constraint.ConstraintLayout>
