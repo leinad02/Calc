@@ -14,4 +14,7 @@
     <string name="txtquotient">Quotient:</string>
     <string name="quotient">0.0</string>
     <string name="btn_reset">Reset</string>
+
+    <!-- Fehlermeldungen !-->
+    <string name="divnullfehler">Es darf nicht durch Null dividiert werden!</string>
 </resources>

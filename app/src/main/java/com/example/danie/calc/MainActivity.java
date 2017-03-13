@@ -36,12 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 float resultat = wert1/wert2;
 
                 if(wert2 == 0){
-                   ergebnis.setText("Es darf nicht durch 0 dividiert werden!");
-                }
-                else{
-                ergebnis.setText(Float.toString(resultat));
+                   ergebnis.setText(R.string.divnullfehler);
+                } else{
+                ergebnis.setText(String.valueOf(resultat));
             }}
-
         });
 
         reset.setOnClickListener(new View.OnClickListener() {
