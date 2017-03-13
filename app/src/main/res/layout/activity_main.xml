@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -8,32 +9,114 @@
     android:layout_gravity="center">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/twEingabehint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="25sp"
-        tools:text="Geben Sie zwei Zahlen ein!" />
+        tools:text="Geben Sie zwei Zahlen ein!"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="25dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteHeight="29dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/eTeingabe1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:ems="20"
-        android:inputType="numberDecimal">
+        android:inputType="numberDecimal"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="69dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteHeight="42dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/twEingabehint"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
 
-        <requestFocus />
+        <requestFocus
+            tools:layout_conversion_absoluteX="0dp"
+            tools:layout_conversion_absoluteY="69dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_conversion_absoluteHeight="0dp" />
     </EditText>
 
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/eTeingabe2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="20"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="112dp"
+        tools:layout_conversion_absoluteWidth="360dp"
+        tools:layout_conversion_absoluteHeight="42dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/eTeingabe1"
+        app:layout_constraintTop_toBottomOf="@+id/eTeingabe1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/eTeingabe1" />
 
-</TableLayout>
+    <Button
+        android:id="@+id/btndiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/twEingabehint"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:text="Dividiere!"
+        android:layout_marginTop="136dp" />
+
+    <TextView
+        android:id="@+id/twErgname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        tools:text="Quotient:"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/twQuotient"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/twQuotient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="96dp"
+        app:layout_constraintTop_toBottomOf="@+id/eTeingabe2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
