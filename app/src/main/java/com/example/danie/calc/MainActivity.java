@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText eingabe1;
     EditText eingabe2;
-    Button dividiere;
+    Button dividiere, reset;
     TextView ergebnis;
 
     @Override
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         eingabe1 = (EditText) findViewById(R.id.eTeingabe1);
         eingabe2 = (EditText) findViewById(R.id.eTeingabe2);
         dividiere = (Button) findViewById(R.id.btndiv);
+        reset = (Button) findViewById(R.id.btnrst);
         ergebnis = (TextView) findViewById(R.id.twQuotient);
 
         dividiere.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +37,17 @@ public class MainActivity extends AppCompatActivity {
                 ergebnis.setText(Float.toString(resultat));
             }
         });
+
+        reset.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick (View v){
+                eingabe1.setText("0.0");
+                eingabe2.setText("0.0");
+                ergebnis.setText("0.0");
+            }
+        });
+
 
     }
 }
