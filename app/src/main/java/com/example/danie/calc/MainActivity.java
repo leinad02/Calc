@@ -34,8 +34,14 @@ public class MainActivity extends AppCompatActivity {
                 float wert1 = Float.parseFloat(eingabe1.getText().toString());
                 float wert2 = Float.parseFloat(eingabe2.getText().toString());
                 float resultat = wert1/wert2;
+
+                if(wert2 == 0){
+                   ergebnis.setText("Es darf nicht durch 0 dividiert werden!");
+                }
+                else{
                 ergebnis.setText(Float.toString(resultat));
-            }
+            }}
+
         });
 
         reset.setOnClickListener(new View.OnClickListener() {
