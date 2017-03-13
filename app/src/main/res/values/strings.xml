@@ -1,10 +1,16 @@
 <resources>
+    <!-- App-Name !-->
     <string name="app_name">Divisionsrechner</string>
 
-    <!-- Text View !-->
+    <!-- Eingabeaufforderung, Wert1 und Wert2 !-->
     <string name="gebe_zwei_zahlen_ein">Gebe zwei Zahlen ein!</string>
     <string name="dividenden">0</string>
     <string name="divisor">0</string>
+
+    <!-- Divisionsbutton !-->
     <string name="btn_dividiere">Dividiere!</string>
+
+    <!-- Ergebnistext + Wert !-->
+    <string name="txtquotient">Quotient:</string>
     <string name="quotient">0.0</string>
 </resources>
