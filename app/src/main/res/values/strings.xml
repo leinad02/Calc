@@ -18,4 +18,6 @@
     <!-- Fehlermeldungen !-->
     <string name="divnullfehler">Es darf nicht durch Null dividiert werden!</string>
     <string name="feldleer">Mindestens ein Wert fehlt!</string>
+    <string name="sDivisor">Divisor</string>
+    <string name="sDividend">Dividend</string>
 </resources>

@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.IllegalFormatCodePointException;
+
 import static android.R.id.empty;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if(wert2 == 0){
                    ergebnis.setText(R.string.divnullfehler);
-                } else if (TextUtils.isEmpty((CharSequence) eingabe1) || TextUtils.isEmpty((CharSequence) eingabe2)) {
+                } /*else if (TextUtils.isEmpty(eingabe1.getText().toString()) || TextUtils.isEmpty(eingabe2.getText().toString())) {
                     ergebnis.setText(R.string.feldleer);
-                } else {
+                }*/ else {
                 ergebnis.setText(String.valueOf(resultat));
             }
 
