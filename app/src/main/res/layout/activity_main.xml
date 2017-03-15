@@ -12,7 +12,7 @@
         android:id="@+id/twEingabehint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="59dp"
         android:gravity="center"
         android:text="@string/gebe_zwei_zahlen_ein"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -26,7 +26,8 @@
         tools:layout_conversion_absoluteHeight="29dp"
         tools:layout_conversion_absoluteWidth="360dp"
         tools:layout_conversion_absoluteX="0dp"
-        tools:layout_conversion_absoluteY="25dp" />
+        tools:layout_conversion_absoluteY="25dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
         android:id="@+id/eTeingabe1"
@@ -60,9 +61,11 @@
         android:id="@+id/eTeingabe2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="50"
+        android:ems="10"
         android:inputType="numberDecimal"
         android:text="@string/divisor"
+        android:layout_gravity="end"
+
         app:layout_constraintLeft_toLeftOf="@+id/eTeingabe1"
         app:layout_constraintRight_toRightOf="@+id/eTeingabe1"
         app:layout_constraintTop_toBottomOf="@+id/eTeingabe1"

@@ -2,10 +2,13 @@ package com.example.danie.calc;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import static android.R.id.empty;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     EditText eingabe2;
     Button dividiere, reset;
     TextView ergebnis;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +41,13 @@ public class MainActivity extends AppCompatActivity {
 
                 if(wert2 == 0){
                    ergebnis.setText(R.string.divnullfehler);
-                } else{
+                } else if (TextUtils.isEmpty((CharSequence) eingabe1) || TextUtils.isEmpty((CharSequence) eingabe2)) {
+                    ergebnis.setText(R.string.feldleer);
+                } else {
                 ergebnis.setText(String.valueOf(resultat));
-            }}
+            }
+
+            }
         });
 
         reset.setOnClickListener(new View.OnClickListener() {

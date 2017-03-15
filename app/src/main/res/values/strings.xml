@@ -17,4 +17,5 @@
 
     <!-- Fehlermeldungen !-->
     <string name="divnullfehler">Es darf nicht durch Null dividiert werden!</string>
+    <string name="feldleer">Mindestens ein Wert fehlt!</string>
 </resources>
